@@ -13,6 +13,7 @@
     crypt.sha384		SHA-384
     crypt.sha512		SHA-512
     crypt.ripemd128	RIPEMD-128
+crypt.derive		derive
 
   Sample hash function usage:
     > print(_G.crypt.md2("abc"))
