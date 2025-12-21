@@ -86,10 +86,9 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 					}
 				}
 			}))
+			module.connected = true
 		end
 	end)
-	
-	module.connected = true
 end
 
 function module.Stop()
