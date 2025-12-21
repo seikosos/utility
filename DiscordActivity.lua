@@ -5,8 +5,7 @@ local HttpService = game:GetService("HttpService")
 
 local function Heartbeat(interval)
 	task.spawn(function()
-		while true do
-			task.wait(interval / 1000)
+		while task.wait(interval / 1000) and connection do
 			connection:Send(HttpService:JSONEncode({
 				op = 1,
 				d = ""
@@ -15,9 +14,9 @@ local function Heartbeat(interval)
 	end)
 end
 
-function module.Update(name, typeo, details, state, assets)
+function module.Update(name: string, typeo: number, details: string, state: string, assets: {})
 	assert(connection, "cant update if not started")
-	local payload = {
+	connection:Send(HttpService:JSONEncode({
 		op = 3,
 		d = {
 			since = nil,
@@ -32,11 +31,10 @@ function module.Update(name, typeo, details, state, assets)
 			status = "online",
 			afk = false
 		}
-	}
-	connection:Send(HttpService:JSONEncode(payload))
+	}))
 end
 
-function module.Init(Token: string, name, typeo, details, state, assets)
+function module.Init(Token: string, name: string, typeo: number, details: string, state: string, assets: {})
 	assert(Token ~= "", "token must be provided")
 	
 	connection = ws.connect("wss://gateway.discord.gg/?v=10&encoding=json")
