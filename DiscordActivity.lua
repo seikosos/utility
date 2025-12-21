@@ -26,7 +26,7 @@ function module.Update(name, typeo, details, state, assets)
 				type = typeo or 0,
 				details = details or "No Details!",
 				state = state or "No state!",
-				assets = module.assets or {},
+				assets = assets or module.assets,
 				timestamps = { start = os.time() * 1000 }
 			}},
 			status = "online",
