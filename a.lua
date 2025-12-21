@@ -1,38 +1,0 @@
-local VKmFXCLBDb = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local oUsHsWfEcD = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local CIHhooRkKX = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local AqhnGnBhty = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local LbFJmoHdYS = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local wDoPAQQSCl = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local EDXatKhExi = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local BcpbAzsone = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local GYEcoMJqDy = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local QaYdAmFZZs = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local eNcuMImbZY = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local XvPhSoWsgb = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local zPsWTbPpMe = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local WvNEehpkFu = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local PpWZWpDtCs = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local vAWWULjRFe = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local dEuNiUQMCa = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local MLtVIrTtgh = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local VvUNjTQUdx = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local JugFfNpGhA = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local DIyAvuXOjQ = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local QgPsHnddRN = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local EbcoTAgNKK = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local UZquTKMmYr = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local NmgyfzbQbm = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local IvMMyNUDNS = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local cMaywYMnPn = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local cxcsRTNpeO = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local CqZaauepSC = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local vtifndGBpi = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local ADFOpMOdnp = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local bfRhlIxGQR = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local fgTgBzCilw = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local lysEpOhiBs = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local MHucdjrNQA = function() local a = math.random(1,100); local b = a*math.sin(a); return a+b end
-local SJKYpEBNyz = function(x) local holy = "" for i=1, math.random(5,10) do holy = holy .. string.char(math.random(65,90)) end return x .. holy:sub(1,0) end local xDfvsjIzgZ = SJKYpEBNyz("init") local function importancernfrfrfrfrfr() local tmp = 0 for i=1, 15 do tmp = tmp + (i * math.cos(i)) - math.sin(i) if (getfenv().loadstring or getgenv().loadstring) ~= loadstring then while true do end end end return tmp end importancernfrfrfrfrfr() local function sdfjbfhsjadf(s, seed) math.randomseed(seed) local t = {} for i = 1, #s do local r = math.random(0, 255) t[i] = string.char((s:byte(i) - r) % 256) if i % 4 == 0 then local trash = (i * 42) % 7 end end return table.concat(t) end local function asuidnjasdkjmasdsa(x) local rev = x:reverse() for i=1, math.random(2,4) do local tmp = "" for j=1, #rev do tmp = tmp .. string.char((rev:byte(j) + 0) % 256) end rev = tmp end return rev:reverse() end local function dfsfgdfgdfgdf(x) local w = 'Nullfuscator' local h = "" for i = 1, 32 do h = h .. string.char((w:byte(((i-1) % #w) + 1) * 13 + i) % 256) if (i % 5) == 0 then h = h .. "" end end local res = x:gsub(".", function(c) local r = (c:byte() * 13 + h:byte((#h - 1) % #h + 1)) % 256 return string.char(r) end) return res end local function dshfbhwejbnfuzhbwehfubweufbwebhf(x) local w = 'Nullfuscator' local t = {} for i = 1, #x do t[i] = string.char((x:byte(i) + i * 7 + w:byte((i % #w) + 1)) % 256) if i % 3 == 0 then local dummy_val = (i * 19) % 17 end end return table.concat(t) end local function dfsbfjsdfnsd(x) local w = 'Nullfuscator' local rev = x:reverse() for i = 1, math.random(2, 5) do rev = rev:gsub(".", function(c) local shifted = ((c:byte() << 3) ~ w:byte((#w - 1) % #w + 1)) % 256 return string.char(shifted) end) for j = 1, math.random(2,4) do local _ = j * math.sin(j) end end return rev end local function amogusfunction(x) local r = "" local w = 'Nullfuscator' for i = 1, #x, 3 do local b1 = x:byte(i) or 0 local b2 = x:byte(i+1) or 0 local b3 = x:byte(i+2) or 0 r = r .. string.char((b1 + b2 + b3 + w:byte((i % #w) + 1)) % 256) if i % 7 == 0 then local wtfokhello = math.sqrt(i * 3) end end return r end local function balzdfjn(x) local extra = "" for i = 1, math.random(3, 6) do extra = extra .. string.char(math.random(65, 90)) end return x .. extra:sub(1, 0) end local function uinrfiernjferjingergerg(x) if (getfenv().loadstring or getgenv().loadstring) ~= loadstring then while true do end end local function whatnow(y) local s = 0 for i = 1, #y do s = s + y:byte(i) if i % 4 == 0 then s = s - 1 end end return y end return whatnow(x) end local sdf = "" for i = 1, 10 do sdf = sdf .. tostring(math.random(0, 1000)) end if tonumber(sdf) then sdf = tostring(sdf) else sdf = tostring(sdf) end local encrypted_bytecode = [[[úYÐénwÁÎÝ>1`ýMü¾¾±gþÎ¤0}ùg¼±,p×	\K
-/íÏáñ,5ó¿ a¡hqe¶®ÞÕKÆÅ¬Y;c£sk]0Ì(r -MþÿÙ|ª³O E¤`°ßî÷1¤òuÅð ¥#Î)êQ909ö¤á.dÛî½Æ**$ bÖóO½îQ¿òâQ%ó©ªà«ó³IäX:z¾û|;]f¬¼XòWÃ 9ëØø¡«Wq2Xéã}«êh¢pç	3ù§FÁí !é }aÉhþÉz(5©sJr©X±[K+AS0,´Yp2÷GÍÉv°Gübqf#Ù¥,¹£¾$£Kâ±i<«ù7¦Åñ·u_O#»L6w\;Ûï¾õÎh]Ù®ÆàÑKhSáR>¼¹O.dú¢PôXUÒÍGá¸o¢åÆ!L%ÿàJÈ[N}ªuPéâoxP<RwõênpðU½,©¾x¤Ü'ÒUÅ_ÏJ}«<²¦¯Ý79éù;`¤%Wuã)ÖBPv³À«ÓXÅOfØ.6
-qËhØ©g2ò¿¤e¸3ýCLÙ"ÍóXÈaH¶]] local step0 = sdfjbfhsjadf(encrypted_bytecode, 133) local step1 = asuidnjasdkjmasdsa(step0) local step2 = dfsfgdfgdfgdf(step1) local step3 = uinrfiernjferjingergerg(step2) local step4 = dshfbhwejbnfuzhbwehfubweufbwebhf(step3) local step5 = asuidnjasdkjmasdsa(step4) local step6 = dfsbfjsdfnsd(step5) local step7 = amogusfunction(step6) local step8 = balzdfjn(step7) local holyshit = asuidnjasdkjmasdsa(step8) for i = 1, math.random(3, 7) do local tmp = i * math.random(1, 100) end loadstring(holyshit)()
