@@ -14,8 +14,14 @@ local function Heartbeat(interval)
 	end)
 end
 
-function module.Update(name: string, typeo: number, details: string, state: string, assets: {})
+function module.Update(name: string, typeo: number, details: string, state: string, assets: {}, appid:number)
 	assert(connection, "cant update if not started")
+	if assets then
+		module.assets = assets
+	end
+	if appid then
+		module.appid = appid
+	end
 	connection:Send(HttpService:JSONEncode({
 		op = 3,
 		d = {
@@ -25,7 +31,8 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 				type = typeo or 0,
 				details = details or "No Details!",
 				state = state or "No state!",
-				assets = assets or module.assets,
+				application_id = module.appid,
+				assets = module.assets,
 				timestamps = { start = module.starttime }
 			}},
 			status = "online",
@@ -34,13 +41,16 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 	}))
 end
 
-function module.Init(Token: string, name: string, typeo: number, details: string, state: string, assets: {})
+function module.Init(Token: string, name: string, typeo: number, details: string, state: string, assets: {}, appid:number)
 	assert(Token ~= "", "token must be provided")
 	
 	connection = ws.connect("wss://gateway.discord.gg/?v=10&encoding=json")
 	
 	if assets then
 		module.assets = assets
+	end
+	if appid then
+		module.appid = appid
 	end
 	
 	connection.OnMessage:Connect(function(message)
@@ -66,6 +76,7 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 							name = name or "no name",
 							type = typeo or 0,
 							details = details or "No Details!",
+							application_id = module.appid or 0,
 							state = state or "No state!",
 							assets = module.assets or {},
 							timestamps = { start = module.starttime }
