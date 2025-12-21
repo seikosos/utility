@@ -19,7 +19,7 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 	connection:Send(HttpService:JSONEncode({
 		op = 3,
 		d = {
-			since = 0,
+			since = module.starttime or 0,
 			activities = {{
 				name = name or "no name",
 				type = typeo or 0,
@@ -50,6 +50,8 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 			local interval = data.d.heartbeat_interval
 			Heartbeat(interval)
 
+			module.starttime = os.time() * 1000
+
 			connection:Send(HttpService:JSONEncode({
 				op = 2,
 				d = {
@@ -66,7 +68,7 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 							details = details or "No Details!",
 							state = state or "No state!",
 							assets = module.assets or {},
-							timestamps = { start = os.time() * 1000 }
+							timestamps = { start = module.starttime }
 						}},
 						status = "online",
 						afk = false
