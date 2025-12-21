@@ -19,14 +19,14 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 	connection:Send(HttpService:JSONEncode({
 		op = 3,
 		d = {
-			since = module.starttime or 0,
+			since = 0,
 			activities = {{
 				name = name or "no name",
 				type = typeo or 0,
 				details = details or "No Details!",
 				state = state or "No state!",
 				assets = assets or module.assets,
-				timestamps = { start = os.time() * 1000 }
+				timestamps = { start = module.starttime }
 			}},
 			status = "online",
 			afk = false
