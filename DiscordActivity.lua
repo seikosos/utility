@@ -19,7 +19,7 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 	connection:Send(HttpService:JSONEncode({
 		op = 3,
 		d = {
-			since = nil,
+			since = 0,
 			activities = {{
 				name = name or "no name",
 				type = typeo or 0,
