@@ -75,12 +75,15 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 			}))
 		end
 	end)
+	
+	module.connected = true
 end
 
 function module.Stop()
 	assert(connection, "cant stop if not even started!")
 	connection:Close()
 	connection = nil
+	module.connected = false
 end
 
 return module
