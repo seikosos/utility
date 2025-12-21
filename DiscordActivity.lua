@@ -14,7 +14,7 @@ local function Heartbeat(interval)
 	end)
 end
 
-function module.Update(name: string, typeo: number, details: string, state: string, assets: {}, appid:number)
+function module.Update(name: string, typeo: number, details: string, state: string, assets: {}, appid)
 	assert(connection, "cant update if not started")
 	if assets then
 		module.assets = assets
@@ -41,7 +41,7 @@ function module.Update(name: string, typeo: number, details: string, state: stri
 	}))
 end
 
-function module.Init(Token: string, name: string, typeo: number, details: string, state: string, assets: {}, appid:number)
+function module.Init(Token: string, name: string, typeo: number, details: string, state: string, assets: {}, appid)
 	assert(Token ~= "", "token must be provided")
 	
 	connection = ws.connect("wss://gateway.discord.gg/?v=10&encoding=json")
