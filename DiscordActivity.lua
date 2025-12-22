@@ -46,12 +46,8 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 	
 	connection = ws.connect("wss://gateway.discord.gg/?v=10&encoding=json")
 	
-	if assets then
-		module.assets = assets or {}
-	end
-	if appid then
-		module.appid = appid or "0"
-	end
+	module.assets = assets or {}
+	module.appid = appid or "0"
 	
 	connection.OnMessage:Connect(function(message)
 		local data = HttpService:JSONDecode(message)
