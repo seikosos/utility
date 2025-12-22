@@ -47,10 +47,10 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 	connection = ws.connect("wss://gateway.discord.gg/?v=10&encoding=json")
 	
 	if assets then
-		module.assets = assets
+		module.assets = assets or {}
 	end
 	if appid then
-		module.appid = appid
+		module.appid = appid or "0"
 	end
 	
 	connection.OnMessage:Connect(function(message)
@@ -76,9 +76,9 @@ function module.Init(Token: string, name: string, typeo: number, details: string
 							name = name or "no name",
 							type = typeo or 0,
 							details = details or "No Details!",
-							application_id = module.appid or 0,
+							application_id = module.appid,
 							state = state or "No state!",
-							assets = module.assets or {},
+							assets = module.assets,
 							timestamps = { start = module.starttime }
 						}},
 						status = "online",
