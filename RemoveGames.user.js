@@ -5,7 +5,7 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
-// @version      1.4
+// @version      1.5
 // @author       seikoso
 // @downloadURL https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.user.js
 // @updateURL   https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.meta.js
@@ -47,9 +47,9 @@
     /* ---------------- Statistics ---------------- */
 
     let stats = {
-        scanned: 0,
-        blocked: 0,
-        rngBlocked: 0
+        scanned: GM_getValue("scanned", 0),
+        blocked: GM_getValue("blocked", 0),
+        rngBlocked: GM_getValue("rngBlocked", 0)
     };
 
     function updateStatsUI() {
@@ -58,6 +58,10 @@
         document.getElementById("statRngBlocked").textContent = stats.rngBlocked;
         document.getElementById("statWords").textContent = getForbiddenWords().join(", ");
         document.getElementById("rngToggle").checked = settings.blockRNG;
+
+        saveSetting("scanned", stats.scanned);
+        saveSetting("blocked", stats.blocked);
+        saveSetting("rngBlocked", stats.rngBlocked);
     }
 
     /* ---------------- Filtering ---------------- */
