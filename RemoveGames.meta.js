@@ -2,8 +2,10 @@
 // @name         Remove bad games from roblos
 // @namespace    NullFire
 // @match        https://www.roblox.com/*
-// @grant        none
-// @version      1.3
+// @grant        GM_getValue
+// @grant        GM_setValue
+// @grant        GM_registerMenuCommand
+// @version      1.4
 // @author       seikoso
 // @downloadURL https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.user.js
 // @updateURL   https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.meta.js
