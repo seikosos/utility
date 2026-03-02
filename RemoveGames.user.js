@@ -5,7 +5,7 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
-// @version      1.6
+// @version      1.7
 // @author       seikoso
 // @downloadURL https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.user.js
 // @updateURL   https://raw.githubusercontent.com/seikosos/utility/refs/heads/main/RemoveGames.meta.js
@@ -28,9 +28,9 @@
     /* ---------------- Words ---------------- */
 
     let baseForbiddenWords = [
-        "67", "brainrot", "steal a", "don't steal", "modded", "feet",
-        "tsunami", "waves", "gubby", "outfit", "headpats from", "lay", 
-        "clothing", "garden", "grow a", "offline", "spin a", "sleep on"
+        "67", "brainrot", "steal a", "don't steal", "modded", "feet", "ai", "poop",
+        "tsunami", "waves", "gubby", "outfit", "headpats from", "lay", "fart",
+        "clothing", "garden", "grow a", "offline", "spin a", "sleep on", "prove"
     ];
 
     function getForbiddenWords() {
